@@ -1,0 +1,271 @@
+@import url('global.css');
+@import url("animation.css");
+.section { text-align: center; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;}
+#section0 { background-image: url(../images/1bg.jpg);}
+#section1 { background-image: url(../images/2bg.jpg);}
+#section2 { background-image: url(../images/3bg.jpg);}
+#section3 { background-image: url(../images/4bg.jpg);}
+
+.title1 { opacity: 0.8; font-size: 60px; line-height: 93px; background: url(../images/titleline1.png) no-repeat center bottom;}
+.title2 { opacity: 0.8; font-size: 30px; line-height: 75px;}
+.title3 { font-size: 20px; line-height: 48px; margin-top: 20px;}
+#section1 .title1, #section1 .title2, #section2 .title1, #section2 .title2 { color: #fff; opacity: 1;}
+
+
+
+#section0 .title1{
+	color:#FFFFFF;
+}
+#section0 .title3{
+	font-size:18px;
+	position:relative;
+	z-index:99;
+	border:1px solid #FFFFFF;
+	width:1060px;
+	height:48px;
+	margin:0px auto;
+	border-radius:5px;
+	background:#FFFFFF;
+	overflow: hidden;
+}
+
+/* first page animation */
+.active .section0_title1,.active .section0_title2{
+	-webkit-animation:1s ease;-moz-animation:1s ease;-ms-animation:1s ease;animation:1s ease;
+	-webkit-animation-name:fadeinT;-moz-animation-name:fadeinT;-ms-animation-name:fadeinT;animation-name:fadeinT;
+}
+.active .section0_title3{
+	-webkit-animation:1s ease-in forwards;-moz-animation:1s ease-in forwards;-ms-animation:1s ease-in forwards;animation:1s ease-in forwards;
+	-webkit-animation-name:bouncein;-moz-animation-name:bouncein;-ms-animation-name:bouncein;animation-name:bouncein;
+}
+.sq_start{
+	 position: absolute;
+    bottom: 10%;
+    left:50%;
+    z-index:3;
+    margin-left:-50px;
+    width: 100px;
+    height: 20px;
+    font-size: 18px;
+    background: -webkit-gradient(linear,left top,right top,color-stop(0, #5396FF),color-stop(0.3, #5396FF),color-stop(0.5, white),color-stop(0.7, #5396FF),color-stop(1, #5396FF));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-animation: slidetounlock 4s linear infinite;
+    animation: slidetounlock 4s linear infinite;
+}
+@-webkit-keyframes slidetounlock { 0% {background-position: -150px 0;} 80%{background-position: 100px 0;} 100% {background-position: 150px 0;}}
+@keyframes slidetounlock { 0% {background-position: -150px 0;} 80%{background-position: 100px 0;} 100% {background-position: 150px 0;}}
+
+/* bottom css effect */
+.sq_mouse{
+	position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 3;
+}
+.sq_m_small{
+	position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 8px;
+    border-radius: 6px;
+    background: #fff;
+    animation: smallDown 1.5s forwards infinite;
+    -webkit-animation: smallDown 1.5s forwards infinite;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+@keyframes smallDown {
+    0%{top:7px;opacity: 1;}
+    50%{top:9px;opacity: 0.5;}
+    100%{top:10px;opacity: 0}
+}
+@-webkit-keyframes smallDown {
+    0%{top:7px;opacity: 1;}
+    50%{top:9px;opacity: 0.5;}
+    100%{top:10px;opacity: 0}
+}
+
+/********** second page *************/
+#section1 .title1{
+	clear: both;
+	background:none;
+}
+.section1_top,.section1_bottom{
+	width:660px;
+	margin:0px auto;
+	height:auto;
+	overflow: hidden;	
+	position: relative;
+}
+.section1_top{
+	bottom:50px;
+}
+.section1_bottom{
+	top:40px;
+}
+.section1_top a,.section1_bottom a{
+	display:block;
+	font-weight: bold;
+	height:50px;
+	line-height:50px;
+	color:#FFFFFF;
+	float:left;
+	width:200px;
+	/*font-size: 20px;*/
+	background: #2a76c1 url(../images/banner-bg.png) left top repeat;
+	margin-right:20px;
+	/*border-radius:3px;*/
+}
+.section1_top a:hover,.section1_bottom a:hover{
+	background-color:#ff9933;
+	color:#FFFFFF;
+}
+/*second page anima*/
+.active .rotateinLT{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:rotateinLT;-moz-animation-name:rotateinLT;-ms-animation-name:rotateinLT;animation-name:rotateinLT;
+}
+.active .rotatein{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:rotatein;-moz-animation-name:rotatein;-ms-animation-name:rotatein;animation-name:rotatein;
+}
+.active .rotateinRT{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:rotateinRT;-moz-animation-name:rotateinRT;-ms-animation-name:rotateinRT;animation-name:rotateinRT;
+}
+.active .wobble{
+	-webkit-animation:1s ease;-moz-animation:1s ease;-ms-animation:1s ease;animation:1s ease;
+	-webkit-animation-name:wobble;-moz-animation-name:wobble;-ms-animation-name:wobble;animation-name:wobble;
+}
+/********** three page ***********/
+.section2_bg{
+	position:relative;
+	top:40px;
+	float: left;
+	width:630px;
+	height:380px;
+	margin-left:30px;
+	background:url(../images/products_bg.png) no-repeat center center;
+	/*border:1px solid red;*/
+}
+.section2_bg h2{
+	color:#FFFFFF;
+	font-size:60px;
+	display:block;
+	width:630px;
+	text-align: center;
+	position:relative;
+	top:-20px;
+	left:20px;
+}
+.section2_content{
+	float:left;
+	width:400px;
+	margin-left:140px;
+	box-sizing:content-box;
+}
+.section2_content font{
+	display:block;
+	/*background-color:#FFFFFF;*/
+	text-decoration: none;
+	text-align: left;
+	width:auto;
+	height:35px;
+	line-height:35px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-left:10px;
+	box-sizing:content-box;
+}
+.section2_content font a{
+	color:rgb(255,255,255);
+	display:inline-block;
+	height:35px;
+	border-color:rgb(34,34,34);
+	position:relative;
+	z-index:99999;
+	padding:0px 80px 0px 15px;
+	
+}
+.section2_content font a:hover{
+	-webkit-box-shadow: 0 0 5px #99dd33;
+	-moz-box-shadow: 0 0 5px #99dd33;
+	-ms-box-shadow: 0 0 5px #99dd33;
+	-o-box-shadow: 0 0 5px #99dd33;
+	box-shadow: 0 0 5px #99dd33;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-ms-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	-webkit-animation-name: breath;
+	-webkit-animation-duration:2s;	
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes 'breath' {
+	from {
+		opacity:0.2;
+	}
+	50% {
+		opacity:1;
+	}
+	to {
+		opacity:0.2;
+	}
+}
+@-webkit-keyframes 'breath2' {
+	from {
+		opacity:0.5;
+	}
+	50% {
+		opacity:1;
+	}
+	to {
+		opacity:0.5;
+	}
+}
+
+/*third page anima*/
+.active .section2_bg{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:bounceinB;-moz-animation-name:bounceinB;-ms-animation-name:bounceinB;animation-name:bounceinB;
+}
+.active .bounceinR{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:bounceinR;-moz-animation-name:bounceinR;-ms-animation-name:bounceinR;animation-name:bounceinR;
+}
+
+.active .bounceinL{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:bounceinL;-moz-animation-name:bounceinL;-ms-animation-name:bounceinL;animation-name:bounceinL;
+}
+
+
+/**********four ***********/
+.DownloadBtn{
+    margin: 85px auto 0;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background: #5396FF;
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 25px;
+}
+/*four page anima*/
+.active .bounceinT{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:bounceinT;-moz-animation-name:bounceinT;-ms-animation-name:bounceinT;animation-name:bounceinT;
+}
+.active .bounceinB{
+	-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;
+	-webkit-animation-name:bounceinB;-moz-animation-name:bounceinB;-ms-animation-name:bounceinB;animation-name:bounceinB;
+}

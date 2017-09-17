@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>MDDN201-P1</title>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="js/fullpage/jquery.fullPage.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="top">
+	<div class="menu">
+		<nav class="nav">
+			<dl>
+				<dt>
+					<a href="#section0" title="introduction">introduction</a>
+				</dt>
+				<div style="display: none;">
+					<dd>
+						<a href="#section1" title="fuction">fuction</a>
+					</dd>
+					<dd>
+						<a href="#section2" title="history">history</a>
+					</dd>
+					<dd>
+						<a href="#section3" title="extend">extend</a>
+					</dd>
+				</div>
+			</dl>
+			
+		</nav>
+	</div>
+</div>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="title1 section0_title1" style="color:#FFFFFF;">What is HTML</div>
+		<div class="title2 section0_title2" style="color: #FFF">HTML is the abbreviation of Hypertext Markup Language.</div>
+		<div class="title3 section0_title3">
+			based on SGML (Standard Generalized Markup Language), which is the main tool of Web for editing web pages
+		</div>
+		<div class="sq_start">down</div>
+		<div class="sq_mouse">
+            <img src="images/shubiao.png">
+            <div class="sq_m_small"></div>
+        </div>
+	</div>
+	<div class="section" id="section1">
+		<div class="title1 bounceinT">What can HTML do</div>
+		<div class="title3 bounceinT" style="color: #FFF">
+			1. Publish an online document that contains titles, text, tables, lists, and photos.<br/>
+			2. The online information retrieval through hyperlinks.<br/>
+			3. remote access service form.<br/>
+			4. video clips, audio clips and some other applications in the document.
+			
+		</div>
+		<div class="sq_start">down</div>
+		<div class="sq_mouse">
+            <img src="images/shubiao.png">
+            <div class="sq_m_small"></div>
+        </div>
+	</div>
+	
+	<div class="section" id="section2">
+		<div class="section2_bg">
+			<h2>The developing history of HTML</h2>
+		</div>
+		<div class="section2_content">
+			<font class="bounceinR">
+				<a href="javascript:" style="background-color:rgba(213,70,47,0.8);">HTML1.0  </a>
+			</font>
+			<font class="bounceinR">
+				<a href="javascript:" style="background-color:rgba(55,188,155,0.8);">HTML1.0/2.0</a>
+			</font>
+			<font class="bounceinL">
+				<a href="javascript:" style="background-color:rgba(255,232,0,0.8);">HTML2.0 </a>
+			</font>
+			<font class="bounceinR">
+				<a href="javascript:" style="background-color:rgba(20,162,212,0.8);">HTML3.0 </a>
+			</font>
+			<font class="bounceinL">
+				<a href="javascript:" style="background-color:rgba(150,122,220,0.8);">HTML3.2</a>
+			</font>
+			<font class="bounceinL">
+				<a href="javascript:"  style="background-color:rgba(175,94,156,0.8);">HTML4.0 </a>
+			</font>
+			<font class="bounceinR">
+				<a href="javascript:"  style="background-color:rgba(0,177,106,0.8);">HTML5.0 </a>
+			</font>
+			
+		</div>
+		<div class="sq_start">down</div>
+		<div class="sq_mouse">
+            <img src="images/shubiao.png">
+            <div class="sq_m_small"></div>
+        </div>
+	</div>
+	<div class="section" id="section3">
+		<div class="section1_top">
+			<a href="javascript:" class="rotateinLT" style="background-color:rgba(0,177,106,0.8); width: 300px">
+				<font>Web Effects</font>
+			</a>
+			<a href="javascript:" class="rotatein" style="background-color:rgba(255,255,255,0.8);color:#333333;width: 320px">
+				<font>Short Video</font>
+			</a>
+		</div>
+		<div class="title1 wobble">What can you make with HTML</div>
+		<div class="section1_bottom">
+			<a href="javascript:"  class="rotateinRT" style="background-color:rgba(150,122,220,0.8);">
+				<font>Games</font>
+			</a>
+			<a href="javascript:" class="rotatein" style="background-color:rgba(255,255,255,0.8);color:#333333">
+				<font>Offline Editor</font>
+			</a>
+			<a href="javascript:" class="rotateinLT" style="background-color:rgba(0,177,106,0.8);">
+				<font>3D Graphics</font>
+			</a>
+		</div>
+		
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fullpage/jquery.fullPage.min.js"></script>
+<script>
+$(function() {
+	$('#fullpage').fullpage({
+		navigation: true
+	});
+
+	$(".nav dl").hover(function(){
+		$(this).find("dt").addClass("hover");
+		$(this).find("div").slideDown();
+	},function(){
+		$(this).find("dt").removeClass("hover");
+		$(this).find("div").hide();
+	})
+	
+});
+</script>
+</body>
+</html>
